@@ -1,6 +1,6 @@
 module git.du.com/cloud/du_component/dumongo
 
-go 1.17
+go 1.19
 
 require (
 	github.com/go-stack/stack v1.8.0 // indirect

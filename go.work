@@ -1,0 +1,35 @@
+go 1.20
+
+use (
+	./dualarm
+	./duapache_hbase
+	./dubreaker
+	./ducache
+	./ducachecenter
+	./duconfig
+	./ducounter
+	./dudebug
+	./dudecoder
+	./dudeploy
+	./dudingtalk
+	./dudownload
+	./duemail
+	./duenv
+	./dugindb
+	./dugorm
+	./dugoroutingpool
+	./duhbase
+	./duinflux
+	./dukafka
+	./dulogv2
+	./dumongo
+	./dumysql
+	./dunacos
+	./dunsq
+	./duratelimit
+	./duredis
+	./dureflect
+	./durpcx
+	./duslb
+	./dutoken
+)

@@ -1,0 +1,120 @@
+
+Lock: 
+  host: r-bp1n5rt4mcxfjlae0z.redis.rds.aliyuncs.com:6379
+  password: 'ZZIDCn2UZM5fxeRq'
+  db: 2
+
+CustomerInfo: 
+  TabelName: caocaokeji_shuzilm_cn
+    Customer: caocaokeji
+    CustomerId: 669
+    Cid: "MFwwDQYJKoZIhvcNAQEBBQADSwAwSAJBAM8sg1/740uBCTbYs72T3Q9dBFMq7Qn2j20llip9iZYzW0xb5zAqCBXgvBAkq/kvTZ5m3sZxwudNKi+f26pnMGkCAwEAAQ=="
+
+kafka: 
+  hosts: [ "172.18.77.229:9092","172.18.77.230:9092","172.18.77.231:9092" ]
+  app_topic: du-android-data
+
+rdsInfos: 
+  - url: "du_android:58gewMFfkryDX6X2@(rm-bp1j7wq659l800lj8.mysql.rds.aliyuncs.com:3306)"
+      min: 0
+      max: 1
+
+mysql_dev: 
+  connect_str: "du_android:58gewMFfkryDX6X2@(rm-bp1j7wq659l800lj8.mysql.rds.aliyuncs.com:3306)/du_android"
+
+server: 
+  index: 1
+    debug: false # 是否调试模式
+    multiIndexExpire: 60 # 缓存的多元索引过期时间, 单位是 秒
+
+access_log: 
+  rotate_cron: 0 0 * * * *
+    file_name: /logs/access/access.log
+    max_age: 7
+
+err_log: 
+  rotate_cron: 0 0 * * * *
+    file_name: /logs/err/err.log
+    max_age: 7
+
+raw_log: 
+  rotate_cron: 0 0 * * * *
+    file_name: /logs/raw/raw.log
+    max_age: 1
+
+did_log: 
+  rotate_cron: 0 0 * * * *
+    file_name: /logs/did/did.log
+    max_age: 7
+
+redis_err_log: 
+  rotate_cron: 0 0 * * * *
+    file_name: /logs/redis_err/redis_err.log
+    max_age: 7
+
+table_store_err_log: 
+  rotate_cron: 0 0 * * * *
+    file_name: /logs/table_store_err/table_store_err.log
+    max_age: 7
+
+table_store_not_found_log: 
+  rotate_cron: 0 0 * * * *
+    file_name: /logs/table_store_not_found/table_store_not_found.log
+    max_age: 7
+    compress: true
+
+businessLog: 
+  dir: /logs/biz
+    prefix: du
+    trigger: true
+
+runLog: 
+  dir: /logs/run
+    prefix: du
+    trigger: true
+
+redis_master: 
+  host: r-bp1n5rt4mcxfjlae0z.redis.rds.aliyuncs.com:6379
+  password: 'ZZIDCn2UZM5fxeRq'
+  db: 1
+
+ImpactMac: 
+  host: r-bp1n5rt4mcxfjlae0z.redis.rds.aliyuncs.com:6379
+  password: 'ZZIDCn2UZM5fxeRq'
+  db: 3
+
+redis_index: 
+  host: r-bp1n5rt4mcxfjlae0z.redis.rds.aliyuncs.com:6379
+  password: 'ZZIDCn2UZM5fxeRq'
+  db: 4
+
+redis_did: 
+  host: r-bp1n5rt4mcxfjlae0z.redis.rds.aliyuncs.com:6379
+  password: 'ZZIDCn2UZM5fxeRq'
+  db: 5
+
+bizkey: 
+  5.8: "Bq&so{kL(Xz@y~`~i7u|<2@MO{oJoE%Z$3.3<>?:['|{.}pmn" # dna 业务预发布版本密钥
+    6.0: "TWB&90`-)tqw$jqu3o5$%^&+=`-09+=87fqy!edv>?:['|{2f" # dna 6.0 业务密钥
+    6.2: "Ues&90`-)tq|{2ffqy!e]w$jquty5$%^&+=`-09+=87>?:['" # dna 6.2 业务密钥
+    6.4: "dv3o5$%^&+=90`-),<>?:['|{.}u3512340#$%^+dv>?:['?:" # dna 6.4 业务密钥
+    7.0: "sa!@#tbaf@$jqu3o5$%^&+=`-09%39(y!edv>?:['|{2flsd7" # dna 7.0 业务密钥
+    7.2: "43o5$%^87fqyu<>?:[(y!edv>?:['s3mn];io,^@!B&+{2fle" # dna 7.2 业务密钥
+    default: "%0+ad*879&^%$kl;Z:f-->|<,.mtabqoegfrt53!~(&fqg" # 默认密钥
+
+conflict_did_map: 
+  "2CEF4D:B95F23:9DD489": "1"
+    "5EFE27:106BDF:793DEB": "1"
+    "163B7F:85C036:8D9487": "1"
+    "A60F08:1550F2:771CFD": "1"
+    "7B0CF4:A84E7C:31028C": "1"
+    "DF5DEA:241487:14D949": "1"
+    "FCDEFF:0AE821:3C64AD": "1"
+    "2E5171:2CC016:FA3963": "1"
+    "5BDB9B:3195A1:2AC8B7": "1"
+    "197642:E063ED:9369BF": "1"
+    "5CCE83:BD39DD:032EB6": "1"
+    "C6F50B:4D1517:397204": "1"
+    "6C5352:FF7D3F:F39778": "1"
+    "744332:0AD8BB:B3FCF9": "1"
+    "B0B694:0C8F5C:894F8D": "1"

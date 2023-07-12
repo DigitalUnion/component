@@ -1,0 +1,6 @@
+.idea/
+bin/
+*.svg
+vendor/
+go.sum
+*.log

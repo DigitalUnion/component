@@ -1,0 +1,32 @@
+
+influx: 
+  url: "http://172.17.129.178:8086/"
+  token: "YJyFyKClyTKuNZ5XR3OjVqA-62i4V3aFUIhImZissPnt3YDYS07fOU3M55RRKFwwUxow7AD0ovMHLRs5sqiIzQ=="
+  org: "shuzilm"
+  bucket: h5_unload
+
+raw_log: 
+  addrs:
+      - "172.17.147.30:30514"
+  appid: "h5_unload_test"
+  module: "raw"
+  is_check: true
+
+biz_dulog: 
+  addrs:
+      - "172.17.147.30:30514"
+  appid: "h5_unload_test"
+  module: "biz"
+  is_check: true
+
+biz_key: 
+  1.0: ":Afd6#D=:Afd6#D="
+  1.1.0: ":Afd6#D=:Afd6#D="
+  1.2.0: ":Afd6#D=:Afd6#D="
+
+biz_log: 
+  file: /bind/logs/biz/biz.log 
+  enable : true 
+  max_age: 7 
+  rotate: 0 0 * * * * 
+  size: 1000
